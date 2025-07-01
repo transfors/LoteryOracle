@@ -6,6 +6,7 @@ const INFURA_NODO = process.env.NODO;
 const SEPOLIA_PRIVATE_KEY = process.env.PRKEY;
 const ETHERSCAN_API_KEY = process.env.ETHSCAN_KEY;
 
+
 module.exports = {
   solidity: "0.8.24",
   networks: {
