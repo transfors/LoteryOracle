@@ -27,7 +27,6 @@ contract Lottery {
         require(msg.sender == owner, "No Permissions");
         _;
     }
-
     constructor() {
         owner = msg.sender;
     }
@@ -35,7 +34,7 @@ contract Lottery {
         uint256 _counter = counter++;
         player[_counter] = msg.sender;
         emit VRF();
-        if(_counter == 99) {
+        if(_counter == 3) {
             //temino.
             emit VRF();
         }
